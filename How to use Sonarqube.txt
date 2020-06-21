@@ -1,0 +1,55 @@
+
+			Sonarcube
+
+Steps:
+
+Step 1: Download the Sonarcube v6.7.7  from the following website
+ 
+www.sonarcube.org
+
+Step 2: To run the Sonarcube
+
+Go to the sonarcube folder in your local drive, go to bin/windows-x86-64
+double click StartSonar
+
+Step 3:Create a maven Java project in Eclipse.
+
+Enter the following dependency entries in pom.xml for maven-sonar plugin and jacoco plugin
+
+<dependency>
+    <groupId>org.codehaus.sonar</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>5.1</version>
+</dependency>
+  <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+<dependency>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.8.5</version>
+</dependency>
+
+
+Create jar file for the Java project by
+Right click the project Run As-> Maven Install
+
+
+
+Step 4: To run the jacoco plugin
+
+Right click the project and click Run As ->maven build
+and in the goal enter the following
+
+clean org.jacoco:jacoco-maven-plugin:prepare-agent install
+
+
+Step 5: To run sonar plugin
+
+Right click the project and click Run As ->maven build
+and in the goal enter the following
+
+sonar:sonar
+
+In the console you can find the url for the generated report by Sonarcube.
+
+*******************************************************************************************************************************************************************
+

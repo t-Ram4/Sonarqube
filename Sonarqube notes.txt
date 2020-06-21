@@ -1,0 +1,34 @@
+Sonarqube
+
+What is SonarQube?
+SonarQube is an open source platform for continuous inspection of code quality. 
+
+Sonarqube is used to find the following issues in the code
+
+1. Unused variables
+2.Duplicate code
+3.Use of System.out.println in the place of logger
+4. Code vulnerable to throw NullPointerException
+
+
+What is static code analysis ?
+Computer code that is performed without actually executing programs.  Source code will be checked for compliance with a predefined set of rules or best practices set by the organization.
+
+
+Quality Gate:
+
+They are set of conditions that your code must meet in order to pass.
+
+Example: code coverage should be 80%
+
+
+Rule:
+We can set rules in the Sonarqube, and our code will be checked against these rules.
+
+Code smell:
+When a piece of code does not comply with a rule, an issue is logged and they are called code smell.
+
+Code Coverage
+The amount of code covered by unit testcases is called code coverage
+
+
